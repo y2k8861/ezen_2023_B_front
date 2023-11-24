@@ -65,3 +65,58 @@
 
 9. <address>
     - 주소 마크업
+
+10. <input />
+    - <form> 태그 안에서 사용
+    - 주요속성
+        1. type
+            type="text"     : [기본값] 텍스트
+            type="password" : 패스워드
+            type="email"    : 이메일 형식 [@필수입력]
+            type="color"    : 색상
+            type="date"     : 날짜
+            type="datetime-local"   : 날짜/시간
+            type="month"    : 날짜[월]
+            type="time"     : 시간
+            type="week"     : 주
+            type="range"    : 범위[스크롤]
+            type="number"   : 숫자
+            type="file"     : 첨부파일*
+
+            type="radio"    : [단일선택 - name속성 동일]
+            type="checkbox" : [복수선택 - name속성 동일]
+
+            type="button"   : 버튼 [추후에 JS와 같이 사용 할 예정]
+            type="submit"   : form[폼] 전송 [*추후에 JAVA서버에게 전송 할 예정]
+            type="reset"    : fomr[폼] 입력 초기화
+
+        2. name
+            - 태그의 이름을 넣어서 식별하는 열할 [사람 이름]
+                <남자 이름="유재석" />
+
+        3. value
+            - 초기값 넣어주기
+            - 버튼 이름
+            - 날짜/시간 초기값
+
+        4. placeholder
+            - 가이드 라인
+
+        5. readonly
+            - 수정불가[읽기불가]
+        
+        6. disabled
+            - 사용불가
+        
+        7. autofocus
+            - 포커스[커서이동]
+
+        8. minlengh, maxlength
+            - 값은 최소 길이, 최대 길이
+
+        9.multipe
+            - [type="file"] 일때 여러개 첨부파일
+
+        10. checked
+            - [type="radio"] 일때 체크상태
+            - [type="checkbox"] 일때 체크상태
