@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>과제2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>과제2</h1>
+
+    <form action="">
+        <fieldset>
+            <legend><h3>비회원 게시판</h3></legend>
+            카테고리
+            <select name="" id="">
+                <option value="">자유게시판</option>
+                <option value="" selected>공지사항</option>
+                <option value="">문의하기</option>
+            </select>
+            <br />
+
+            <input type="text" name="" id="" placeholder="작성자" />
+            <input type="password" name="" id="" placeholder="비밀번호" />
+            <br />
+            <hr />
+
+            <input type="text" name="" id="" placeholder="게시물 제목 입력" />
+            <br />
+            <hr />
+
+            <textarea name="" id="" cols="50" rows="20" placeholder="게시물 내용입력"></textarea>
+
+            <table>
+                <tr>
+                    <th>공개선택</th>
+                    <td colspan="3">
+                        <input type="radio" name="공개유무" id="" checked />공개글
+                        <input type="radio" name="공개유무" id="" />비공개글
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>공유선택</th>
+                    <td colspan="3">
+                        <input type="checkbox" name="sns" id="" />카카오톡
+                        <input type="checkbox" name="sns" id="" />트위터
+                        <input type="checkbox" name="sns" id="" />네이버카페
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>작성일자</th>
+                    <td><input type="date" name="" id="" /></td>
+                    <th>작성시간</th>
+                    <td><input type="time" name="" id="" /></td>
+                </tr>
+            </table>
+            <hr />
+
+            <table>
+                <tr>
+                    <th>첨부파일</th>
+                    <td><input type="file" name="" id="" /></td>
+                </tr>
+            </table>
+            <br />
+
+            <input type="button" value="목록보기" />
+            <input type="submit" value="글쓰기" />
+            <input type="reset" value="다시쓰기" />
+        </fieldset>
+    </form>
+</body>
+</html>
