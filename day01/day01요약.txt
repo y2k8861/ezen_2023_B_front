@@ -66,7 +66,7 @@
 9. <address>
     - 주소 마크업
 
-10. <input />
+10-1. <input />
     - <form> 태그 안에서 사용
     - 주요속성
         1. type
@@ -120,3 +120,14 @@
         10. checked
             - [type="radio"] 일때 체크상태
             - [type="checkbox"] 일때 체크상태
+
+10-2 <textarea>
+    - 긴글 텍스트
+    - 속성
+        rows = "행 텍스트 개수"
+        cols = "열 텍스트 개수"
+
+10-3 <select>
+    - 목록 상자
+    - 하위상자
+        <option>항목</option>
