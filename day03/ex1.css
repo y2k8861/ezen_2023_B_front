@@ -1,11 +1,16 @@
 @charset "UTF-8";
 /* 51p. ~ 71p. */
 
+/* 2개 이상의 선택자를 작성할떄 ,(쉼표 구분) */
+
 * {margin: 0; padding: 0; box-sizing: border-box;}
 ul,ol,li {list-style: none;}
 a {text-decoration: none;}
 
-body {background-color: #bbf1ef;}
+body {
+    background-color: #bbf1ef;
+    font-family: 'NanumGothic', sans-serif;
+}
 
 h1 {
     max-width: 800px;
