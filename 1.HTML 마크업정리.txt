@@ -1,3 +1,10 @@
+HTML : 하이퍼텍스트 마크업 언어 (Hyper Text Markup Language)
+
+    HTTP : HTML(하이퍼텍스트 전송 프로토콜) 통신 규약
+        - HTML 전송 규약
+        http://www.naver.com [네이버 메인페이지 불러와줘]
+        실생활 규약
+
 마크업 이란
     - 컴퓨터가 기능을 이해할 수 있는 HTML의 문법
     규칙 : <마크업> ~내용물~</마크업>
