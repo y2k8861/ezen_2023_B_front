@@ -1,16 +1,16 @@
 
-@font-face {
+@font-face { /* 웹폰트 추가하기 */
     font-family: 'BMDOHYEON';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+}  
 
-body { background-color:#30beba; }
-#logo{ width:300px; display: block; margin: 0 auto; }
-fieldset{ background-color: white; line-height: 160%; max-width: 584px; width: 90%;}
-#suggest{ width:580px; height:300px; font-size: 16px;}
-#name{ width:200px; height:20px; fo}
+body { background-color:#30beba; }  /* 배경색 추가 */
+#logo{ width:300px; display: block; margin: 0 auto; }   /* 로고 크기 조절 및 가운데 정렬 */
+fieldset{ background-color: white; line-height: 160%; max-width: 584px; width: 90%;}    /* 필트셋 배경 및 넓이 조절 */
+#suggest{ width:580px; height:300px; font-size: 16px;}  /* textarea 크기 조절 및 폰트 조절 */
+#name{ width:200px; height:20px; }  /* 성명 input 크기 조절 */
 
-p{ font-size: 15.5px;}
-*{font-family: BMDOHYEON;}
+p{ font-size: 15.5px;}  /* 단락 크기 조절 */
+*{font-family: BMDOHYEON;}  /* 전체 폰트 지정 */
