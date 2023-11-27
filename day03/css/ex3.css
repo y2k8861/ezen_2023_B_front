@@ -22,6 +22,7 @@ figure {max-width: 300px;}
 }
 
 .box ul {
+    width: 500px;
     margin-top: 20px;
     background-color: #0099aa;
     padding: 20px;
