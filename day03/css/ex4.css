@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.container {
+    width: 400px;
+    border: 1px solid #aaa;
+    margin: 50px auto;
+}
+
+figure img {display: block; width: 100%;}
+
+.container .text_box {
+    border-top: 1px solid #aaa;
+    padding: 30px 10px 15px;
+}
+
+.container .text_box h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container .text_box h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.container .text_box p {
+    margin-top: 20px;
+}
+
+.container .text_box p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ea9f00;
+}

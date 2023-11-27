@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+    padding: 50px;
+}
+
+figure img {display: block; width: 100%;}
+
+figure {max-width: 300px;}
+
+.box {
+    margin-top: 40px;
+}
+
+.box h4 {
+    font-size: 18px; 
+    font-weight: 600;
+}
+.box h4 span {
+    font-size: 30px; 
+    color: #ea9f00;
+}
+
+.box ul {
+    margin-top: 20px;
+    background-color: #0099aa;
+    padding: 20px;
+}
+
+.box ul li {
+    margin-bottom: 5px;
+    color: #fff;
+    padding-left: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.box ul li::before {
+    content: "-";
+    position: absolute;
+    top: 0; left: 0;;
+}
+
+.box ul li:last-child {
+    margin-bottom: 0;
+}
+
+.box ul li span {
+    color: #ea9f00;
+}
