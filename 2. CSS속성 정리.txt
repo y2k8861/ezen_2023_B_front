@@ -73,8 +73,11 @@ CSS : 캐스케이딩(상속/옷) 스타일 시트(Cascading Style Sheets)
         padding : 10px 20px;            상+하, 좌+우
         padding : 10px 20px 30px 40px;  시계방향 [위 오른쪽 아래 왼쪽]
 
-        - 박스모델 가운데 정렬
+        - 박스모델(block) 가운데 정렬
         margin : 0 auto;
+
+        - 박스모델(inline) 가운데 정렬
+        text-align :center;         - 텍스트 , img , a 등등
 
     4. box-sizing                   : 안쪽 여백과 테두리를 사이즈에 포함여부
         box-sizing : content-box;   : 포함X
