@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* 공통 CSS S */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NPSfontBold';
+}
+
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+ul,ol,li {list-style: none;}
+
+a {color: #000; text-decoration: none;}
+
+figure img {display: block; width: 100%;}
+
+.inner {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex_bx {
+    display: flex;
+    flex-flow: row wrap;
+}
+/* 기본 CSS E */
+
+/* header S */
+#header {
+    padding: 20px 0;
+}
+
+#header .inner {
+    justify-content: space-between;
+}
+
+#main_logo {margin-top: 5px;}
+
+#menus {
+    justify-content: flex-end;
+    width: 700px;
+}
+
+#top_menu {align-items: center;}
+
+#top_menu a {
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+#top_menu span {
+    font-size: 10px;
+    line-height: 1;
+    margin-left: 5px;
+    color: #000;
+    font-weight: 600;
+}
+
+#main_manu {
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+}
+
+#main_manu li a {font-size: 20px; color: #000; font-weight: 700;}
+/* header E */
+
+/* main S */
+#main_visual {
+    margin-bottom: 50px;
+}
+
+#main .inner {
+    justify-content: space-between;
+}
+
+#aside {
+    width: 280px;
+    /* 516e7f */
+}
+
+#aside h3 {
+    font-size: 22px;
+    background-color: #516e7f;
+    color: #fff;
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#aside ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#article {
+    width: 935px;
+    padding-bottom: 20px;
+}
+
+#contents_top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#contents_top h3 {font-size: 20px; line-height: 1; font-weight: 800;}
+
+#contents {padding: 10px 0;}
+#contents p {font-size: 16px; font-weight: 600; letter-spacing: -0.03em; line-height: 150%;}
+#contents figure {width: 400px; margin: 10px auto;}
+#contents ul {font-size: 16px; font-weight: 600; letter-spacing: -0.03em; line-height: 150%;}
+/* main E */
+
+/* footer S */
+#footer {
+    background-color: #2c2a29;
+    padding: 20px 0;
+}
+
+#footer .inner {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer_info p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 100%
+}
+/* footer E */
