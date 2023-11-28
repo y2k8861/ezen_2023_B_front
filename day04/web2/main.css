@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* 공통 CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol,li {list-style-type: none;}
+
+a {text-decoration: none; color: black;}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex_box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#header .hd_inner {
+    justify-content: space-between;
+}
+
+/* 지울 내용 S */
+#header, #footer {width: 100%; height: 100px; background-color: skyblue;}
+/* 지울 내용 E */
+
+/* MAIN CSS S */
+#main {
+    margin: 50px 0;
+}
+
+#main .inner {
+    justify-content: space-between;
+}
+
+#aside  {
+    width: 250px;
+}
+
+#aside > h3 {
+    background-color: #0CA9A3;
+    color: #fff;
+    padding: 15px 15px;
+    line-height: 1;
+    font-size: 20px;
+}
+
+#aside > p {
+    padding: 0 15px;
+    margin: 10px 0;
+    line-height: 1.3em;
+}
+
+#aside .input_box {
+    justify-content: space-between;
+}
+
+#aside .input_box input {
+    display: block;
+}
+
+#aside .input_box input[type="text"] {
+    width: 200px;
+    height: 30px;
+}
+
+#aside .input_box input[type="submit"] {
+    width: 40px;
+    height: 30px;
+}
+
+#aside .aside_nav {
+    border-top: 1px solid #000;
+    margin-top: 20px;
+}
+
+#aside .aside_nav h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#aside .aside_nav ul li a {
+    display: block;
+    padding: 10px 15px;
+}
+
+#article {
+    width: 900px;
+    justify-content: space-between;
+}
+
+#article .contents_wrap {
+    width: 425px;
+}
+
+#article .section:nth-child(2) {
+    margin-top: 50px;
+}
+
+#article .section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+#article .section ul.notice li {
+    margin-bottom: 10px;
+}
+
+#article .section ul.notice li a {
+    justify-content: space-between;
+}
+
+#article .section ul.gallery {
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+#article .section ul.gallery li {
+    margin-bottom: 20px;
+}
+
+/* MAIN CSS E */
