@@ -13,6 +13,7 @@ padding: 20px;}
     margin: 0 auto;
     text-align: center;
     margin-top: 10px;
+    width: 100%;
 }
 
 .article {
@@ -25,6 +26,7 @@ padding: 20px;}
 
     .article > div {
         display: flex;
+        width: 45%;
     }
 
     .article > div > a > div {
@@ -59,6 +61,11 @@ padding: 20px;}
 
     .studioImg{
         width: 250px;}
+
+        .scription2{background-color: white;
+            padding: 10px 0px;
+            line-height: 160%;
+            }
 
     
 
