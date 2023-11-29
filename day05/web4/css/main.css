@@ -1,0 +1,65 @@
+/* main page */
+
+/* *{ border: red 1px solid;
+padding: 20px;}
+ */
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainImg{
+    display: block ;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.article {
+    display: flex;
+}
+
+.article > div> a {
+    display: flex;
+}
+
+    .article > div {
+        display: flex;
+    }
+
+    .article > div > a > div {
+        padding: 20px;
+    }
+    .article > div > a > div.scription {
+        padding-top: 30px;
+        font-size: 14px;
+        
+    }
+
+.aside {
+    padding: 35px;
+    background-color: lightgray;
+}
+
+    .aside div div {
+        width: 250px;
+       
+        
+  
+    }
+
+    .aside div{
+        margin: 0 auto;
+        display: flex;
+        width: 1200px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .studioImg{
+        width: 250px;}
+
+    
+
+

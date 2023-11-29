@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,li,ul {list-style: none;}
+a {text-decoration: none; color: #000;}
+
+.inner {width: 1200px; margin: 0 auto;}
+.flexBox {display: flex; flex-flow: row wrap;}
+
+/* header S */
+#header {
+    padding: 30px 0;
+}
+
+#header .flexBox {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav ul li {
+    margin-left: 30px;
+}
+
+#nav ul li a {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#nav ul li a:hover {
+    text-decoration: underline 2px;
+}
+
+/* header E */
+
+/* footer S */
+#footer {
+    background-color: #292C32;
+    padding: 50px 0;
+}
+
+#footer > .flexBox {
+    justify-content: space-between;
+}
+
+#footerLeftBox h5 {
+    font-size: 16px; color: #fff;
+    margin-bottom: 20px;
+}
+
+#footerLeftBox h4 a {
+    font-size: 20px; color: #fff;
+}
+
+#footerCenterBox .flexBox {align-items: center;}
+
+#footerCenterBox .footerNav {margin-bottom: 20px;}
+
+#footerCenterBox .footerNav li {margin-right: 5px;}
+
+#footerCenterBox .footerNav li,
+#footerCenterBox .footerNav li a {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1;
+}
+
+#footerCenterBox .footerNav li a:hover {
+    text-decoration: underline;
+}
+
+#footerCenterBox .footerInfoBox p {
+    color: #fff; font-size: 14px;
+    line-height: 1.4;
+}
+
+#footerRightBox ul li {margin-left: 10px;}
+/* footer E */
