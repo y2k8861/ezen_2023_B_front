@@ -1,0 +1,134 @@
+@charset "URF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,ul,li {list-style: none;}
+
+a {color: #000; text-decoration: none;}
+
+body {
+    background-color: #f5f6f7;
+}
+
+#wrap {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+}
+
+.flexBox {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* header S */
+#headerLogo  {text-align: center; margin: 50px 0;}
+#headerLogo img {
+    width: 250px;
+}
+/* header E */
+
+/* main S */
+h5 {
+    margin: 15px 0 5px;
+}
+
+.inputBox {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.inputBox input,
+.inputBox select {
+    border: none;
+    background-color: #fff;
+    height: 30px; width: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+
+.inputBox span {
+    color: #aaa;
+}
+
+.inputIcon {
+    width: 25px;
+    height: 25px;
+    background-image: url("https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png");
+    background-size: 125px 75px;
+}
+
+#pwIcon {
+    background-position-x : 0px;
+    background-position-y : 0px;
+}
+
+#pwConfirmIcon {
+    background-position-x : -78px;
+    background-position-y : 0px;
+}
+
+.inputBoxWrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthY, .birthM, .birthD {
+    width: 120px;
+}
+
+.titleAt {
+    font-size: 12px; color: #aaa;
+}
+
+.phoneWrap {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.phoneWrap .inputBox {width: 69%;}
+
+.phoneWrap .buttonWrap {width: 29%;}
+
+
+.buttonWrap input[type="button"],
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #03C75A;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.submitWrap {margin-top: 30px;}
+.submitWrap input {font-size: 20px; height: 50px;}
+
+.inputBox.inputAuth,
+.inputBox.inputAuth input {
+    background-color: #F3F4F4;
+}
+/* main E */
+
+/* footer S */
+#footer {margin-top: 50px;}
+#footer ul {justify-content: center;}
+#footer ul li {margin: 0 5px;}
+#footer ul li a {font-size: 10px; color: #aaa;}
+#footer .info {justify-content: center; margin-top: 15px; align-items: center;}
+#footer .info .ft_logo {width: 70px; margin-right: 20px;}
+#footer .info .ft_logo img {width: 100%;}
+#footer .info p {font-size: 8px; line-height: 1; color: #aaa;}
+/* footer E */

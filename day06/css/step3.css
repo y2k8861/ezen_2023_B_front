@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* 
+    a  마크업 사용시 기본css제거
+*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {color: orange;}
+a:active {color: aqua;}
+a:visited {color: olive;}
+
+/* 
+    선택자:hover        : 해당 선택자에 마우스를 올렸을 때
+    선택자:active       : 해당 선택자에 마우스 왼쪽 클릭하고 있을 때
+    선택자:visited      : 해당 링크에 방문한 적이 있을때
+*/
+
+#header {
+    background-color: aquamarine;
+}
+
+#header > ul {display: flex; justify-content: center;}
+#header > ul > li {list-style: none; margin: 0 10px; position: relative;}
+
+#header > ul > li:hover .subMenu {
+    display: block;
+}
+
+.subMenu {
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 80px;
+    background-color: gold;
+}
+
+.subMenu li {list-style-type: none; }
