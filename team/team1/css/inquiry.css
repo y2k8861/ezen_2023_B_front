@@ -1,0 +1,32 @@
+#cateTitle{
+    width: 1500px;
+    height: 300px;
+    margin: 0 auto;
+}
+#cateTitle>h3{
+    padding: 80px 0 20px;
+    font-size: 50px;
+}
+#cateTitle>p{
+    font-size: 16px;
+    line-height: 28px;
+}
+#cateTitle>p>span{
+    font-weight: bold;
+}
+#cateNav{
+    position: relative;
+}
+#cateNav>p{
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    font-size: 14px;
+}
+#cateNav>p>span{
+    font-weight:bold;
+}
+
+.grayBox {
+    background-color: #F7F7F7;
+}
