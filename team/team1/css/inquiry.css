@@ -1,32 +1,157 @@
-#cateTitle{
-    width: 1500px;
-    height: 300px;
-    margin: 0 auto;
-}
-#cateTitle>h3{
-    padding: 80px 0 20px;
-    font-size: 50px;
-}
-#cateTitle>p{
-    font-size: 16px;
-    line-height: 28px;
-}
-#cateTitle>p>span{
-    font-weight: bold;
-}
-#cateNav{
-    position: relative;
-}
-#cateNav>p{
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    font-size: 14px;
-}
-#cateNav>p>span{
-    font-weight:bold;
-}
-
 .grayBox {
     background-color: #F7F7F7;
 }
+
+#inquiry .inner {width: 1500px; margin: 0 auto; padding: 0 0 100px;}
+
+
+
+/* 폼 부분 CSS  S */
+#formWrap {
+    background-color: #fff; 
+    padding: 80px 150px; 
+    margin-top: 50px; 
+    font-family: 'NotoSansKR', 'SCDream', Arial, sans-serif;
+}
+
+#formWrap table th {
+    font-size: 18px;
+    color: #3c3c3c;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+#formWrap table th .titleBtn {
+    display: inline-flex;
+    padding: 0 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    color: #888;
+    border: 1px solid #888;
+    border-radius: 5px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+#formWrap table th sup {
+    color: red;
+    margin-left: 2px;     
+}
+
+#formWrap table td {
+    padding: 0 16px 8px
+}
+
+#formWrap table td .maxbyte {margin-top: 5px; font-size: 14px;}
+#formWrap table td .maxbyte span {color: red;}
+
+.noData {height: 56px;}
+
+#formWrap .inputBox {
+    width: 100%; 
+    height: 56px; 
+    border-bottom: 1px solid #888; 
+    outline: none; 
+    padding: 6px 12px 6px 20px; 
+    color: #888;
+    font-size: 16px;
+}
+
+#formWrap input[type="radio"] {
+    display: none;
+}
+
+#formWrap .radioWrap {
+    padding: 20px 0;
+}
+
+#formWrap label {height: 24px; vertical-align: middle; margin-right: 20px;}
+
+#formWrap label.radioCheck {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/sub/radio_unchecked.png) no-repeat center center;
+    margin-right: 5px;
+}
+
+#formWrap input[type="radio"]:checked + label.radioCheck {
+    background-image: url(../img/sub/radio_checked.png);
+}
+
+/* #formWrap #store_n:checked ~ .store_n,
+#formWrap #store_y:checked ~ .store_y,
+#formWrap #store_y:checked ~ .person_n,
+#formWrap #store_y:checked ~ .person_y,
+#formWrap #store_y:checked ~ .marketing_n,
+#formWrap #store_y:checked ~ .marketing_y{
+    background-image: url(../img/sub/radio_checked.png);
+} */
+
+#formWrap textarea.inputBox {
+    resize: none;
+    padding: 20px;
+    height: auto;
+}
+
+#formWrap select.inputBox {
+    -webkit-appearance: auto;
+}
+
+#formWrap .inputBox.w120 {width: 120px;}
+#formWrap .inputBox.w250 {width: 250px;}
+#formWrap .inputBox.w280 {width: 280px;}
+
+#formWrap .agreeBox {
+    padding: 34px 32px;
+    background-color: #eee;
+}
+
+#formWrap .agreeBox p {line-height: 1.6;}
+
+#formWrap .agreeBox span {color: red;}
+
+#formWrap .formBtnWrap {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#formWrap .formBtnWrap .inquiryBtn {
+    width: 190px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#formWrap .formBtnWrap .inquiryBtn01 {
+    background-color: #d60615;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#formWrap .formBtnWrap .inquiryBtn02 {
+    border:1px solid #d60615;
+    color: #d60615;
+    background-color: #fff;
+}
+
+#formWrap .inquiryInfo {
+    border: 1px solid #ddd;
+    background-color: #eee;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+#formWrap .inquiryInfo span {font-size: 24px; font-weight: bold; color: #000; padding-right: 30px;}
+
+/* 폼 부분 CSS  E */
+
+#popup {display: none;}
