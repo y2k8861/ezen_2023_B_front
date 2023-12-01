@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 굴림;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+a {color: #000; text-decoration: none;}
+li {list-style: none;}
+
+/* ========== 헤더 ========== */
+#header {
+    background-color: rgba(255,255,255,1);
+    position: sticky;
+    top: -64px;
+    /* 
+        sticky 주의할점[전제조건]
+        1. 상위 요소의 높이 사이즈 안에서 고정. vs fixed 
+        2. 위치속성 필수! : top,right,left,bottom
+        3. 상위 요소가 overflow 속성 사용금지
+    */
+
+    /* 
+        투명도 넣는 방법
+        1-1. rgba(0,0,0,0 ~ 1) a부분이 투명도 0~1 사이 소숫점 이용
+        1-2. transparent 투명색이라는 뜻
+        2. opacity : 0~1; 전체 투명도 0~1 사이 소숫점 이용
+    */
+}
+
+#header #topMenu {
+    padding: 0 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#header #topMenu ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+}
+#header #topMenu ul li {margin-left: 15px;}
+#header #topMenu ul li span {display: inline-block; margin-left: 15px;}
+#header #topMenu ul li a {line-height: 1; display: inline-block;}
+#header #topMenu ul li a img {display: block;}
+
+#header #mainMenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+#header #mainMenu > ul {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    /* width: 90%; */
+}
+
+#header #mainMenu > ul > li  {margin-right: 40px; position: relative;}
+#header #mainMenu > ul > li > a {font-size: 14px; font-weight: bold;}
+#header #mainMenu > ul > li.fontRed a {color: #ff0000;}
+#header #mainMenu > ul > li:hover .subMenu {display: block;}
+#header #mainMenu > ul > li .subMenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    text-align: center;
+    padding: 30px 0 20px;
+    background-color: #fff;
+    display: none;
+}
+
+#header #mainMenu > ul > li .subMenu li {padding: 5px 0;}
+#header #mainMenu > ul > li .subMenu li a {color: #666;}
+
+#header #mainMenu #searchBox {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding: 0px 10px;
+    padding-bottom: 5px;
+}
+
+#header #mainMenu #searchBox input {border: none; display: inline-block; height: 20px; background-color: rgba(255,255,255,0);}
+
+#header #mainMenu #searchBox input:focus {outline: none;}
+
+#header #mainMenu #searchBox img {width: 20px; display: block;}
+
+/* ========== 본문 ========== */
+#mainImg img {
+    display: block;
+    width: 100%;
+}
+
+#mainWrap {
+    width: 1620px;
+    margin: 100px auto;
+}
+
+#mainWrap .title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#mainWrap .coment {
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+}
+
+.items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.item {
+    width: 390px;
+    margin-top: 100px;
+}
+
+.item:nth-child(-n+4) {margin-top: 0;}
+
+.item .imgWrap a,
+.item .imgWrap a img {display: block; width: 100%;}
+
+.item .textWrap {padding: 10px 0;}
+.item .itemColor {
+    display: flex;
+    justify-content: space-between;
+}
+.item .itemColor .colorBox {
+    display: flex;
+}
+
+.item .itemColor .colorBox .color {
+    width: 10px; height: 10px;
+    margin-right: 2px;
+    border: 1px solid #dbdbdb;
+}
+
+.item .itemColor .colorBox .color.black {background-color: black;}
+.item .itemColor .colorBox .color.pink {background-color: pink;}
+.item .itemColor .colorBox .color.ivory {background-color: ivory;}
+.item .itemColor .colorBox .color.green {background-color: green;}
+
+.item .itemColor .reviewBox p {color: #999;}
+
+.item .itemText {margin: 10px 0;}
+.item .itemText .itemSize {color: #666; margin-top: 2px; font-size: 10px; display: block;}
+.item .itemPrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .itemPrice .price span {
+    color: #999;
+    text-decoration: line-through;
+    /* del 마크업 사용시 바로 취소선 */
+    display: block;
+    margin-bottom: 3px;
+}
+
+.item .itemPrice .itemSales {
+    color: #ff0011;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ========== 푸터 ========== */
+#footer .inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#footerTop {background-color: #f7f7f7; padding: 50px 0;}
+#footerTop .inner {display: flex; justify-content: space-between;}
+#footerTop .footerBox h4 {
+    font-size: 18px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#footerTop .footerBox h5 {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#footerTop .footerBox p {
+    line-height: 1.6;
+}
+#footerTop .footerBox ul li {margin-bottom: 15px;}
+#footerTop .footerBox ul li a {}
+
+#footerBottom {
+    text-align: center;
+     color: #999;
+     margin: 40px 0 50px;
+}
+
+/* popup */
+#popup {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+}
+
+#popup ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+#popup ul li:last-child,
+#popup ul li:nth-child(6) {border-bottom: 0;}
+
+#popup ul li a {
+    display: flex;
+    width: 48px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#popup ul li a img {width: 50%;}
+#popup ul li a span{
+    position: absolute;
+    top: 50%; right: 100%;
+    transform: translateY(-50%);
+    width: 80px;
+    line-height: 20px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    display: none;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+#popup ul li a:hover span {display: block;}
