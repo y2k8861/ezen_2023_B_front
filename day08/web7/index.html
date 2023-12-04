@@ -74,8 +74,8 @@
           <!-- p.125 폼 -->
           <form action="" method="">
             <p class="arttendRadio"> <!-- p.126 raido type 에서는 name을 동일하게 해야 단일선택 가능 -->
-              <label for="attend_y"></label><input type="radio" name="attend" value="참석" id="attend_y" checked="checked" />참석</label>
-              <label for="attend_n"></label><input type="radio" name="attend" value="불참" id="attend_n" />불참</label>
+              <label for="attend_y"><input type="radio" name="attend" value="참석" id="attend_y" checked="checked" />참석</label>
+              <label for="attend_n"><input type="radio" name="attend" value="불참" id="attend_n" />불참</label>
             </p>
             <p>성함 <input type="text" name="user_name" /></p>
             <p>메일 주소 <input type="email" name="user_email" id=""></p>
@@ -87,7 +87,7 @@
                 <option value="인간">인간</option>
               </select>
             </p>
-            <p class="arttendCheck">
+            <p class="allergyCheck">
               알레르기가 있는 음식 <br>
               <label for="allergy1"><input type="checkbox" name="allergy" id="allergy1" value="달걀">달걀</label>
               <label for="allergy2"><input type="checkbox" name="allergy" id="allergy2" value="우유">우유</label>
@@ -95,7 +95,7 @@
               <label for="allergy4"><input type="checkbox" name="allergy" id="allergy4" value="대두">대두</label>
             </p>
             <p>메시지 <textarea name="masage" id="" cols="30" rows="10"></textarea></p>
-            <p><input type="submit" value="Send"></p>
+            <p class="submitBtn"><input type="submit" value="Send"></p>
           </form>
         </div>
       </section>
