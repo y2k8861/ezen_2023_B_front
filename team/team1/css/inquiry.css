@@ -73,12 +73,12 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url(../img/sub/radio_unchecked.png) no-repeat center center;
+    background: url(../img/inquiry/radio_unchecked.png) no-repeat center center;
     margin-right: 5px;
 }
 
 #formWrap input[type="radio"]:checked + label.radioCheck {
-    background-image: url(../img/sub/radio_checked.png);
+    background-image: url(../img/inquiry/radio_checked.png);
 }
 
 /* #formWrap #store_n:checked ~ .store_n,

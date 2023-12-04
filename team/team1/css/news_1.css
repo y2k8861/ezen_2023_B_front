@@ -1,0 +1,139 @@
+a{text-decoration: none; color: black;}
+
+/*===========cateTile===========*/
+#cateTitle{
+    width: 1500px;
+    height: 300px;
+    margin: 0 auto;
+}
+#cateTitle>h3{
+    padding: 80px 0 20px;
+    font-size: 50px;
+}
+#cateTitle>p{
+    font-size: 16px;
+    line-height: 28px;
+}
+#cateTitle>p>span{
+    font-weight: bold;
+}
+#cateNav{
+    position: relative;
+}
+#cateNav>p{
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    font-size: 14px;
+}
+#cateNav>p>span{
+    font-weight:bold;
+}
+/*===========cateTile===========*/
+
+#contentNews {
+    background-color: #f7f7f7;
+    padding-bottom: 100px;
+}
+
+#newsWrap{
+    width: 1500px;
+    margin: 0 auto;
+}
+
+/*탭 버튼*/
+#tapWrap{
+    display: flex;
+    font-size: 27px;
+    font-weight: bold;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+.tap a{
+    margin-right: 30px;
+    color:#878787;
+}
+#pageTap{
+    border-bottom: 2px solid #de121c;
+    color: black;
+    margin-right: 30px;
+    padding-bottom: 5px;
+}
+
+/*기사 시작*/
+#viewWrap{
+    width: 1125px;
+    background-color: white;
+    padding: 50px 100px;
+    margin: 0 auto;
+}
+
+/*제목*/
+#viewTitle{
+    background-color: #f7f7f7;
+    border: 1px solid #dddddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 841px;
+    margin: 0 auto;
+    align-items: flex-end;
+}
+#viewTitle h2{
+    font-size: 20px;
+}
+#viewTitle span{
+    font-size: 13px;
+}
+
+/*내용*/
+#news{
+    font-size: 16px;
+    font-weight: bold;
+    width: 840px;
+    margin: 0 auto;
+}
+#subTitle{
+    padding: 30px 0;
+}
+#news p{
+    margin-bottom: 15px;
+}
+#news p span{
+    font-weight: 200;
+}
+#news p span a{
+    color: blue;
+}
+#poster{
+    width: 840px;
+    margin: 30px auto;
+    display: block;
+}
+
+/*sns버튼*/
+#viewWrap ul{
+    display: flex;
+    justify-content: center;
+}
+#viewWrap ul li{
+    margin: 50px 10px;
+}
+
+/*목록버튼*/
+#listBtn {
+    width: 840px;
+    margin: 0 auto;
+}
+#listBtn > a{
+    border: 1px solid #d60615 ;
+    background-color: #d60615;
+    color: white;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 15px 50px;
+    display: block;
+    white-space: nowrap;
+    width: 190px;
+    text-align: center;
+}

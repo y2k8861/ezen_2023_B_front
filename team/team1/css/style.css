@@ -84,7 +84,11 @@
     font-weight: bold;
 }
 
-/* 공통 서브비주얼 S */
+#mainwrap{
+    width: 1500px;
+    margin: 0 auto;
+}
+
 #cateTitle{
     width: 1500px;
     height: 300px;
@@ -114,14 +118,16 @@
     font-weight:bold;
 }
 
-/* 공통 서브비주얼 E */
+#mainTitle{
+    background-color: #F7F7F7;
+}
 
-/*공통 탭 버튼*/
 #tapWrap{
     display: flex;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: bold;
     padding-top: 70px;
+    padding-bottom: 70px;
 }
 .tap a{
     margin-right: 30px;
@@ -132,4 +138,9 @@
     color: black;
     margin-right: 30px;
     padding-bottom: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Noto Sans KR', sans-serif;
 }

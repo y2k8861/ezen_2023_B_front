@@ -1,0 +1,105 @@
+.marticle{
+    width: 350px;
+    height: 328px;
+    background-color: white;
+    position: relative;
+}
+.marticle:hover{
+    border: 1px red solid;
+}
+.marticle img{
+    width: 350px;
+    height: 197px;
+    margin-bottom: 40px;
+}
+#wrapmedia >h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#wrapmedia{
+    width: 1500px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+#wrapmain{
+    background-color:#F7F7F7 ;
+}
+
+#wraparticle{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.marticle span{
+    background-color: red;
+    color: white;
+    width: 74px;
+    height: 26px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18pt;
+    position: absolute;
+    top:55%;
+    left: 7%;
+}
+
+.mtitle{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+.mdate{
+    font-size: 12px;
+    color:#5D5D5D;
+    padding: 0 20px;
+}
+#wrapmedia{
+    position: relative;
+}
+#prev{
+    position: absolute;
+    top: 50%;
+    left: -7%;
+}
+
+#next{
+    position: absolute;
+    top: 50%;
+    right: -7%;
+}
+
+#moon2wrap{
+    background-image: url("../img/main/founded_bg.png");
+    height: 400px;
+}
+#moon2{
+    width: 1500px;
+    margin: 0 auto;
+}
+#moon2 >p{
+    padding-top: 100px;
+    padding-left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#moon2 > span{
+    margin-left: 50px;
+    margin-top: 30px;
+    padding-top: 20px;
+    width: 233px;
+    height: 63px;
+    display: inline-block;
+    border: white 1px solid;
+    color: white;
+    text-align: center;
+    font-size:16px;
+}
+
+#moon2 > span:hover{
+    border: red 1px solid;
+    color: red;
+}

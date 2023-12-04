@@ -1,0 +1,128 @@
+#cateTitle{
+    width: 1500px;
+    height: 300px;
+    margin: 0 auto;
+}
+#cateTitle>h3{
+    padding: 80px 0 20px;
+    font-size: 50px;
+}
+#cateTitle>p{
+    font-size: 16px;
+    line-height: 28px;
+}
+#cateTitle>p>span{
+    font-weight: bold;
+}
+#cateNav{
+    position: relative;
+}
+#cateNav>p{
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    font-size: 14px;
+}
+#cateNav>p>span{
+    font-weight:bold;
+}
+
+#mainTitle{
+    background-color: #F7F7F7;
+}
+
+#tapWrap{
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.tap a{
+    margin-right: 30px;
+    color:#878787;
+}
+#pageTap{
+    border-bottom: 2px solid #de121c;
+    color: black;
+    margin-right: 30px;
+    padding-bottom: 5px;
+}
+
+#mainArticle{
+    width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#article{
+    width: 1500px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#articleTitle{
+    width: 1200px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    align-items: center;
+    margin: 30px auto;
+    font-size: 1.375rem;
+    color: #3c3c3c;
+}
+
+#articleTitle >p{
+    font-size: 0.875rem;
+    margin-right: 78px;
+}
+
+#articleTitle >h3{
+    margin-left: 78px;
+}
+
+#article > img{
+    width: 1120px;
+    margin: 70px 190px;
+}
+
+#articleMain{
+    width: 1120px;
+    margin: 0 auto;
+    color: #000000;
+    font-weight: 1.7;
+    font-size: 18px;
+    padding: ;
+}
+
+#articleMain > h2{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#articleLink{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    border-bottom: rgba(135,135,135,0.5) solid 1px;
+}
+
+#articleLink >img{
+    margin: 30px 10px 50px 10px;
+
+}
+
+#articleMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 64px;
+    background-color: #d60615;
+    color: #fff;
+    margin: 30px auto;
+    font-size: 20px;
+    font-weight: bold;
+}

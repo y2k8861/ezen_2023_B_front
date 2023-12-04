@@ -1,0 +1,125 @@
+a{text-decoration: none; color: black;}
+
+/*===========cateTile===========*/
+#cateTitle{
+    width: 1500px;
+    height: 300px;
+    margin: 0 auto;
+}
+#cateTitle>h3{
+    padding: 80px 0 20px;
+    font-size: 50px;
+}
+#cateTitle>p{
+    font-size: 16px;
+    line-height: 28px;
+}
+#cateTitle>p>span{
+    font-weight: bold;
+}
+#cateNav{
+    position: relative;
+}
+#cateNav>p{
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    font-size: 14px;
+}
+#cateNav>p>span{
+    font-weight:bold;
+}
+/*===========cateTile===========*/
+
+#contentNews {
+    background-color: #f7f7f7;
+}
+
+#newsWrap{
+    width: 1500px;
+    margin: 0 auto;
+}
+
+/*탭 버튼*/
+#tapWrap{
+    display: flex;
+    font-size: 27px;
+    font-weight: bold;
+    padding-top: 70px;
+}
+.tap a{
+    margin-right: 30px;
+    color:#878787;
+}
+#pageTap{
+    border-bottom: 2px solid #de121c;
+    color: black;
+    margin-right: 30px;
+    padding-bottom: 5px;
+}
+
+/*뉴스리스트 박스*/
+#news{
+    display: flex;
+    justify-content: space-between;
+
+}
+#newsList{
+    width: 350px;
+    background-color: white;
+    margin-top: 30px;
+}
+#newsList img{
+    width: 100%;
+}
+#newsList li{
+    padding: 25px 15px;
+}
+.newsBrand {
+    color: #de121c;
+    font-size: 13px;
+    margin-bottom:10px ;
+    font-weight: bold;
+}
+.newsTitle{
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 200%;
+}
+.newsDate{
+    font-size: 13px;
+    font-weight: bold;
+}
+#newsList:hover{
+    border: #de121c solid 1px;
+    box-shadow: 5px 5px 10px #afafaf;
+}
+
+/*페이지 버튼*/
+#pageButton{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 80px 0px;
+}
+
+#pageButton div{
+    border: 1px solid ;
+    width: 40px; height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+#pageButton div img{
+    padding: 13px 10px;
+}
+
+.lButton {
+    margin-right: 25px;
+}
+.rButton{
+    margin-left: 25px;
+}
+.number{
+    margin: 0 3px;
+}
