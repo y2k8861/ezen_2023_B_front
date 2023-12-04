@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+body {
+    /* p.136 */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: #121212
+}
+
+.ffJosefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.innerWrap {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 80px 20px 0;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 0.05em; /* 글자간격 */
+    margin-bottom: 80px;
+}
+
+header {
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+
+header .innerWrap {
+    height: 720px;
+    position: relative;
+}
+
+header h1 {
+    padding-top: 120px;
+}
+
+header .scroll {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+header .scroll img {
+    margin-top: 8px;
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    z-index: 100;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.msgSec {
+    background-color: #fbfaf7;
+}
+
+.msgSec p {
+    text-align: center;
+    line-height: 1.75;
+    margin-bottom: 40px;
+}
+
+.msgSec p.illust {
+    margin-top: 80px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.msgSec p.illust::before {
+    content: url(../images/deco_left.png);
+    position: absolute;
+    left: 320px;
+    bottom: -30px;
+}
+
+.msgSec p.illust::after {
+    content: url(../images/deco_right.png);
+    position: absolute;
+    right: 320px;
+    bottom: -30px;
+}
+
+/* 
+    p.150
+    !important > style속성 > id > class > 타입 > *
+        1. p {font-size:16px!important;}
+        2. <p style="font-size:16px;">
+        3. #id {font-size:16px;}
+        4. .class {font-size:16px;}
+        5. p {font-size:16px;}
+        6. * {font-size:16px;}
+
+    p.151 ~ 152 : 가상 요소 선택자
+    - HTML에 없던 내용물[주로 텍스트,이미지]을 CSS에서 넣어주기가 가능한 기능
+    ::before        : 요소 앞부분에 내용물을 가상으로 넣어주기
+    ::after         : 요소 뒷부분에 내용물을 가상으로 넣어주기
+        conent      : 가상 요소의 내용물
+*/
+
+.dateSec {
+    background-color: #fff;
+    padding-bottom: 120px;
+}
+
+.dateSec .layoutWrap {
+    display: flex;
+}
+
+.dateSec .layoutWrap > p {
+    flex-basis: 735px;
+}
+
+.dateSec .layoutWrap > div {
+    flex-basis: 465px;
+    padding-top: 100px;
+}
+
+.dateSec .dateDetailSec {
+    font-size: 72px;
+    margin: 0 0 170px -100px;
+    background-color: #fff;
+    padding: 40px 64px;
+    line-height: 1.2;
+}
+
+.word1 {font-size: 50px;}
+.word2 {font-size: 40px;}
+.word3 {font-size: 60px;}
+
+.accessSec {
+    margin-left: 48px;
+}
+
+.accessSec h3 {
+    color: #cfafa3;
+    font-size: 55px;
+    letter-spacing: .05em;
+    margin-bottom: 8px;
+}
+
+.accessSec p {
+    line-height: 1.6;
+}
+
+.formSec {
+    background-color: #efe8d9;
+    padding-bottom: 60px;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 5px;
+    padding: 4px 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: baseline;
+    margin-right: 4px;
+}
