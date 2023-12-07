@@ -98,6 +98,7 @@
 
 #formWrap select.inputBox {
     -webkit-appearance: auto;
+    appearance: auto;
 }
 
 #formWrap .inputBox.w120 {width: 120px;}
