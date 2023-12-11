@@ -27,111 +27,111 @@
       비겼을경우 '무승부' 출력
 */
 
-// // -문제1 : prompt 함수 로 국어 , 영어 , 수학 점수를 입력받아 각 변수에 저장하고 총점 출력 , 평균 출력
-// let ex1value1 = Number(prompt("국어 점수를 입력해 주세요."));
-// let ex1value2 = Number(prompt("영어 점수를 입력해 주세요."));
-// let ex1value3 = Number(prompt("수학 점수를 입력해 주세요."));
+// -문제1 : prompt 함수 로 국어 , 영어 , 수학 점수를 입력받아 각 변수에 저장하고 총점 출력 , 평균 출력
+let ex1value1 = Number(prompt("국어 점수를 입력해 주세요."));
+let ex1value2 = Number(prompt("영어 점수를 입력해 주세요."));
+let ex1value3 = Number(prompt("수학 점수를 입력해 주세요."));
 
-// let ex1result1 = ex1value1 + ex1value2 + ex1value3;
-// let ex1result2 = ex1result1 / 3;
+let ex1result1 = ex1value1 + ex1value2 + ex1value3;
+let ex1result2 = ex1result1 / 3;
 
-// // document.write(`국어 : ${ex1value1}, 영어 : ${ex1value2}, 수학 : ${ex1value3}`);
-// // document.write(`총점 : ${ex1result1}, 평균 : ${ex1result2}`);
+// document.write(`국어 : ${ex1value1}, 영어 : ${ex1value2}, 수학 : ${ex1value3}`);
+// document.write(`총점 : ${ex1result1}, 평균 : ${ex1result2}`);
 
-// console.log("문제1");
-// console.log(`국어 : ${ex1value1}, 영어 : ${ex1value2}, 수학 : ${ex1value3}`);
-// console.log(`총점 : ${ex1result1}, 평균 : ${ex1result2}`);
+console.log("문제1");
+console.log(`국어 : ${ex1value1}, 영어 : ${ex1value2}, 수학 : ${ex1value3}`);
+console.log(`총점 : ${ex1result1}, 평균 : ${ex1result2}`);
 
-// // -문제2 : prompt 함수 로 반지름 입력받아서 원넓이[ 반지름*반지름*3.14 ] 출력
-// let ex2value1 = Number(prompt("반지름을 입력해 주세요."));
+// -문제2 : prompt 함수 로 반지름 입력받아서 원넓이[ 반지름*반지름*3.14 ] 출력
+let ex2value1 = Number(prompt("반지름을 입력해 주세요."));
 
-// console.log("\n문제2");
-// console.log(`반지름 : ${ex2value1}`);
+console.log("\n문제2");
+console.log(`반지름 : ${ex2value1}`);
 
-// ex2value1 *= ex2value1;
-// let ex2reult = ex2value1*3.14;
+ex2value1 *= ex2value1;
+let ex2reult = ex2value1*3.14;
 
-// console.log(`원넓이 : ${ex2reult}`);
+console.log(`원넓이 : ${ex2reult}`);
 
-// // -문제3 : prompt 함수 로 두 실수를 입력받아서 앞실수의 값이 뒤실수의 값의 몇%인지 출력[- 54.5   84.3 두 실수 입력시   결과 : 64%]
-// let ex3value1 = Number(prompt("실수1을 입력해 주세요."));
-// let ex3value2 = Number(prompt("실수2을 입력해 주세요."));
-// let ex3result = ex3value1/ex3value2*100;
+// -문제3 : prompt 함수 로 두 실수를 입력받아서 앞실수의 값이 뒤실수의 값의 몇%인지 출력[- 54.5   84.3 두 실수 입력시   결과 : 64%]
+let ex3value1 = Number(prompt("실수1을 입력해 주세요."));
+let ex3value2 = Number(prompt("실수2을 입력해 주세요."));
+let ex3result = ex3value1/ex3value2*100;
 
-// console.log("\n문제3");
-// console.log(`실수1 : ${ex3value1}, 실수2 : ${ex3value2}`);
-// console.log(`결과 : ${ex3result}%`);
+console.log("\n문제3");
+console.log(`실수1 : ${ex3value1}, 실수2 : ${ex3value2}`);
+console.log(`결과 : ${ex3result}%`);
 
-// // -문제4 : prompt 함수 로 정수를 입력받아 홀수[true] / 짝수[false] 여부 출력
-// let ex4value = parseInt(prompt("정수(문제4)를 입력해 주세요."));
+// -문제4 : prompt 함수 로 정수를 입력받아 홀수[true] / 짝수[false] 여부 출력
+let ex4value = parseInt(prompt("정수(문제4)를 입력해 주세요."));
 
-// console.log("\n문제4");
-// console.log(`정수 : ${ex4value} -> ${ex4value%2!==0 ? "홀수":"짝수"}`);
-
-
-// // -문제5 : prompt 함수 로 정수를 입력받아 7배수이면 true / 아니면 false 출력
-// let ex5value = parseInt(prompt("정수(문제5)를 입력해 주세요."));
-
-// console.log("\n문제5");
-// console.log(`정수 : ${ex5value} -> ${ex5value%7 == 0 ? "TRUE(7의 배수O)":"FALSE(7의 배수X)"}`);
-
-// // -문제6 : prompt 함수 로 십만원 단위의 금액을 입력받아 지폐 개수 세기[연산자 사용]
-// let ex6value = Number(prompt("십만원 단위의 금액을 입력해 주세요.",100000));
-
-// console.log("\n문제6");
-// console.log(`${ex6value}원`);
-
-// let ex6result1 = ex6value/100000;
-// ex6value %=100000;
-// let ex6result2 = ex6value/50000;
-// ex6value %=50000;
-// let ex6result3 = ex6value/10000;
-// ex6value %=10000;
-// let ex6result4 = ex6value/5000;
-// ex6value %=5000;
-// let ex6result5 = ex6value/1000;
-
-// console.log(`십만원권 : ${parseInt(ex6result1)}장, 오만원권 : ${parseInt(ex6result2)}장, 만원권 : ${parseInt(ex6result3)}장, 오천원권 : ${parseInt(ex6result4)}장, 천원권 : ${parseInt(ex6result5)}장`)
-
-// // -문제7 : prompt 함수 로 아이디와 비밀번호를 입력받아 아이디가 admin 이고 비밀번호가 1234 와 일치하면 [ 결과 : true 출력 아니면 false 출력 ]
-// let ex7value1 = prompt("아이디를을 입력해 주세요.");
-// let ex7value2 = prompt("비밀번호를 입력해 주세요.");
-
-// console.log("\n문제7");
-// console.log(`아이디 : ${ex7value1}, 비밀번호 : ${ex7value2} `);
-// console.log(ex7value1 == "admin" &&  ex7value2 == "1234" ? "TRUE[로그인]":"FALSE[로그인 불가]");
+console.log("\n문제4");
+console.log(`정수 : ${ex4value} -> ${ex4value%2!==0 ? "홀수":"짝수"}`);
 
 
-// // -문제8 : prompt 함수로 정수를 입력받아 홀수 이면서 7배수이면 true 아니면 false 출력
-// let ex8value = parseInt(prompt("정수(문제8)를 입력해 주세요."));
+// -문제5 : prompt 함수 로 정수를 입력받아 7배수이면 true / 아니면 false 출력
+let ex5value = parseInt(prompt("정수(문제5)를 입력해 주세요."));
 
-// console.log("\n문제8");
-// console.log(`정수 : ${ex8value}`);
-// console.log(`${ex8value%2!==0 && ex8value%7 == 0 ? "TRUE(7의 배수O,홀수)":"FALSE"}`);
+console.log("\n문제5");
+console.log(`정수 : ${ex5value} -> ${ex5value%7 == 0 ? "TRUE(7의 배수O)":"FALSE(7의 배수X)"}`);
 
-// // -문제9 : 정수 2개를 입력받아 더 큰수 를 출력
-// let ex9value1 = parseInt(prompt("정수1(문제9)를 입력해 주세요."));
-// let ex9value2 = parseInt(prompt("정수2(문제9)를 입력해 주세요."));
+// -문제6 : prompt 함수 로 십만원 단위의 금액을 입력받아 지폐 개수 세기[연산자 사용]
+let ex6value = Number(prompt("십만원 단위의 금액을 입력해 주세요.",100000));
 
-// console.log("\n문제9");
-// console.log(`정수1 : ${ex9value1}, 정수2 : ${ex9value2}`);
-// console.log(`결과 : ${ex9value1 > ex9value2 ? ex9value1 : ex9value2}`);
+console.log("\n문제6");
+console.log(`${ex6value}원`);
+
+let ex6result1 = ex6value/100000;
+ex6value %=100000;
+let ex6result2 = ex6value/50000;
+ex6value %=50000;
+let ex6result3 = ex6value/10000;
+ex6value %=10000;
+let ex6result4 = ex6value/5000;
+ex6value %=5000;
+let ex6result5 = ex6value/1000;
+
+console.log(`십만원권 : ${parseInt(ex6result1)}장, 오만원권 : ${parseInt(ex6result2)}장, 만원권 : ${parseInt(ex6result3)}장, 오천원권 : ${parseInt(ex6result4)}장, 천원권 : ${parseInt(ex6result5)}장`)
+
+// -문제7 : prompt 함수 로 아이디와 비밀번호를 입력받아 아이디가 admin 이고 비밀번호가 1234 와 일치하면 [ 결과 : true 출력 아니면 false 출력 ]
+let ex7value1 = prompt("아이디를을 입력해 주세요.");
+let ex7value2 = prompt("비밀번호를 입력해 주세요.");
+
+console.log("\n문제7");
+console.log(`아이디 : ${ex7value1}, 비밀번호 : ${ex7value2} `);
+console.log(ex7value1 == "admin" &&  ex7value2 == "1234" ? "TRUE[로그인]":"FALSE[로그인 불가]");
 
 
-// // -문제10 : 정수 3개를 입력받아 가장 큰수 를 출력 
-// let ex10value1 = parseInt(prompt("정수1(문제10)를 입력해 주세요."));
-// let ex10value2 = parseInt(prompt("정수2(문제10)를 입력해 주세요."));
-// let ex10value3 = parseInt(prompt("정수3(문제10)를 입력해 주세요."));
+// -문제8 : prompt 함수로 정수를 입력받아 홀수 이면서 7배수이면 true 아니면 false 출력
+let ex8value = parseInt(prompt("정수(문제8)를 입력해 주세요."));
 
-// let ex10result = ex10value1 > ex10value2 ? ex10value1 > ex10value3 ? ex10value1 : ex10value3 : ex10value2 > ex10value3 ? ex10value2 : ex10value3;
-// let max = ex10value1;
-// max = max > ex10value2 ? max : ex10value2;
-// max = max > ex10value3 ? max : ex10value3;
+console.log("\n문제8");
+console.log(`정수 : ${ex8value}`);
+console.log(`${ex8value%2!==0 && ex8value%7 == 0 ? "TRUE(7의 배수O,홀수)":"FALSE"}`);
 
-// console.log("\n문제10");
-// console.log(`정수1 : ${ex10value1}, 정수2 : ${ex10value2}, 정수3 : ${ex10value3}`);
-// console.log(`결과 : ${ex10result}`);
-// console.log(`결과 : ${max}`);
+// -문제9 : 정수 2개를 입력받아 더 큰수 를 출력
+let ex9value1 = parseInt(prompt("정수1(문제9)를 입력해 주세요."));
+let ex9value2 = parseInt(prompt("정수2(문제9)를 입력해 주세요."));
+
+console.log("\n문제9");
+console.log(`정수1 : ${ex9value1}, 정수2 : ${ex9value2}`);
+console.log(`결과 : ${ex9value1 > ex9value2 ? ex9value1 : ex9value2}`);
+
+
+// -문제10 : 정수 3개를 입력받아 가장 큰수 를 출력 
+let ex10value1 = parseInt(prompt("정수1(문제10)를 입력해 주세요."));
+let ex10value2 = parseInt(prompt("정수2(문제10)를 입력해 주세요."));
+let ex10value3 = parseInt(prompt("정수3(문제10)를 입력해 주세요."));
+
+let ex10result = ex10value1 > ex10value2 ? ex10value1 > ex10value3 ? ex10value1 : ex10value3 : ex10value2 > ex10value3 ? ex10value2 : ex10value3;
+let max = ex10value1;
+max = max > ex10value2 ? max : ex10value2;
+max = max > ex10value3 ? max : ex10value3;
+
+console.log("\n문제10");
+console.log(`정수1 : ${ex10value1}, 정수2 : ${ex10value2}, 정수3 : ${ex10value3}`);
+console.log(`결과 : ${ex10result}`);
+console.log(`결과 : ${max}`);
 
 // 문제11 : 정수 3개를 입력받아 오름차순 으로 출력    [ 7 5 9 -> 5 7 9]
 let 정수1 = parseInt(prompt("정수1(문제11)를 입력해 주세요."));
