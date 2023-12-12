@@ -8,6 +8,19 @@
     <script src='js/step1.js'></script>
 </head>
 <body>
-    
+    <div style="display: flex;">
+        <div style="width:50%; border: 1px solid #000; padding: 10px;">
+            <h3>회원 등록</h3>
+            sign ID : <input type="text" id="signId" /><br/>
+            sign PW : <input type="text" id="signPw" /><br/>
+            <input type="button" value="가입" onclick="signUp()" />
+        </div>
+        <div style="width:50%; border: 1px solid #000; padding: 10px;">
+            <h3>회원 로그인</h3>
+            login ID : <input type="text" id="loginId" /><br/>
+            login PW : <input type="text" id="loginPw" /><br/>
+            <input type="button" value="로그인" onclick="login()" />
+        </div>
+    </div>
 </body>
 </html>
