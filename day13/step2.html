@@ -5,9 +5,25 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/step2.css">
     <script src='js/step2.js'></script>
 </head>
 <body>
-    
+    <div id="wrap">
+        <div id="numberBox">
+            <h3>입차</h3>
+            차번호 : <input type="text" id="carInNumber" /> <br/>
+            입차시간 : <input type="time" id="carInTime" /> <br/>
+            <input type="button" value="등록" onclick="입차()">
+        </div>
+
+        <div id="timeBox">
+            <h3>출차</h3>
+            차번호 : <input type="text" id="carOutNumber" /> <br/>
+            출차시간 : <input type="time" id="carOutTime" /> <br/>
+            <input type="button" value="요금정산" onclick="출차()">
+            <h4>요금 : <span id="cash"></span></h4>
+        </div>
+    </div>
 </body>
 </html>
