@@ -251,7 +251,17 @@ JAVA와 JAVAScript 다르다
                 default : break;
             }
 
+- 제어문(반복문)
+    1. for문*
+        for(초기값; 조건문; 증감식){
+            실행코드
+        }
 
+    2. 실행순서
+        1. 초기값
+        2. 조건문
+            [참이면] 3. 실행코드 4. 증감식 -> 다시 2번
+            [거짓이면] 종료
 
 - 키워드
     break : switch, 반복문(form,while) {}탈출/종료
@@ -308,3 +318,22 @@ JAVA와 JAVAScript 다르다
 
     str.length-1 : 마지막 인텍스
         length : 1 ~ , index : 0 ~
+
+- DOM(문서Document 객체object 모델Model) 객체
+    1.document          : HTML -(.js는 항상 HTML안에 존재한다.)
+        - 제공하는 함수
+        1. document.querySelector('선택자')
+            - 선택자
+            1. '#id명', '.class명', '마크업' 등
+
+            - 속성
+                1. .value          : 입력태그    : input, select, textarea 등
+                2. .innerHTML      : 입력태그 외 : div, table, ul, h, span 등
+
+
+    - 1. HTML 전체를 호출한다.
+        const htmlObj = document;
+    - 2. HTML 중에서 input 1개 호출
+        const inputObj = document.querySelector('input');
+    - 3. HTML 중에서 input의 입력된 value 호출
+        const inputObj = document.querySelector('input').value;
