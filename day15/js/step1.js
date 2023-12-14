@@ -78,11 +78,11 @@ function 선언함수(){    // function 함수명(){}
 console.log(typeof 선언함수);
 console.log(선언함수);
 
-// function 테스트(x,y){z = Number(x)+Number(y); alarm(z)}
-// function alarm(z){alert(z)};
-
-// 테스트(prompt('숫자1'),prompt('숫자2'));
-
 // p.201
 // 1. 함수명 : 1. 'f', 매개변수 : 'x', 리턴값 : x+x;
 function f(x){return x+x;}
+
+// 함수[consol.log]호출 (함수[f] 호출)
+    // 1. f(3) => 6
+    // 2. console.log(6);
+console.log(f(3));
