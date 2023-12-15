@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'NPSfontBold';
+    font-weight: 500;
+}
+
+#wrap {width: 500px; margin: 30px auto; border: 1px solid #ddd; padding: 50px 20px; display: flex; flex-flow: row wrap; align-items: center;}
+#wrap > h1 {text-align: center; font-size: 40px; display: inline-block; margin: 0 auto 50px; position: relative;}
+#wrap > h1::before {content: ""; display: block; width: 120%; height: 5px; border-radius: 5px; background-color: sandybrown; position: absolute; bottom: -10px; left: -10%;}
+
+#registration {width: 100%; display: flex; flex-flow: row wrap; align-items: center; justify-content: space-between;}
+#registration #inputBox {width: 300px;}
+#registration #inputBox .flexBox {width: 100%; display: flex; padding-bottom: 10px; margin-bottom: 10px; align-items: center; border-bottom: 1px solid #ddd;}
+#registration #inputBox label {font-size: 22px; margin-right: 5px; width: 55px;}
+#registration #inputBox input {width: calc(100% - 60px); padding: 0px 5px; font-size: 16px; border: none; outline: none;}
+#registration > input[type="button"] {width: calc(100% - 320px); height: 80px; font-size: 24px; border: none; cursor: pointer; background-color: sandybrown; color: #fff; border-radius: 10px; transition: all 0.3s;}
+#registration > input[type="button"]:hover {box-shadow: 1px 1px 5px rgba(0,0,0,0.3);}
+
+#view {
+    width: 100%;
+    margin-top: 50px;
+}
+#view table {width: 100%; text-align: center; table-layout: fixed; border: none; border-collapse: collapse;}
+#view thead {background-color: sandybrown;}
+#view thead tr {border: none;}
+#view tr {border-bottom: 1px solid #ddd;}
+#view th {font-size: 20px; padding: 10px 5px; color: #fff;}
+#view td {font-size: 16px; padding: 10px 5px;}
+#view td button {font-size: 16px; border: none; background:none; width: 100%; height: 100%; cursor: pointer; transition: all 0.3s;}
+#view td button:hover {color: sandybrown; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);}
+#view h2 {width: 100%; height: 50px; font-size: 25px; background-color: sandybrown; text-align: center; color: #fff; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-top: 20px;}

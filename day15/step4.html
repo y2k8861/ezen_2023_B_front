@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/step4.css'>
+    <script src='js/step4.js'></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>가계부</h1>
+
+        <!-- 등록부분 -->
+        <div id="registration">
+            <div id="inputBox">
+                <div class="flexBox">
+                    <label for="date">날짜 : </label>
+                    <input type="date" name="" id="date" />
+                </div>
+                <div class="flexBox">
+                    <label for="item">항목 : </label>
+                    <input type="text" name="" id="item" placeholder="항목" />
+                </div>
+                <div class="flexBox">
+                    <label for="money">금액 : </label>
+                    <input type="text" name="" id="money" />
+                </div>
+            </div>
+
+            <input type="button" value="등록" onclick="등록()" />
+        </div>
+
+        <div id="view">
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col width="12%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>날짜</th>
+                        <th>항목</th>
+                        <th>금액</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                </tbody>
+            </table>
+
+            <h2> 총합계 :&nbsp;<span></span>원</h2>
+        </div>
+    </div>
+</body>
+</html>
