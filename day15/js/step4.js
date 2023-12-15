@@ -28,57 +28,36 @@ function 등록(){
     총금액.push(Number(입력금액));
 
     let 날짜2I = 날짜2.length;
-    if(날짜2I > 1) {
-        for(let i = 0; i<날짜2I; i++){
-            let temp1 = 0;
-            let temp2 = 0;
-            let temp3 = 0;
-            let temp4 = 0;
-            let temp5 = 0;
-            for(let j = 1; j<=날짜2I; j++ ){
-                if(날짜2[i] > 날짜2[i+j]){
-                    temp1 = 날짜[i+j];
-                    날짜[i+j] = 날짜[i];
-                    날짜[i] = temp1;
+    for(let i = 0; i<날짜2I; i++){
+        let temp1 = 0;
+        let temp2 = 0;
+        let temp3 = 0;
+        let temp4 = 0;
+        let temp5 = 0;
+        for(let j = 1; j<=날짜2I; j++ ){
+            if(날짜2[i] > 날짜2[i+j]){
+                temp1 = 날짜[i+j];
+                날짜[i+j] = 날짜[i];
+                날짜[i] = temp1;
 
-                    temp2 = 날짜2[i+j];
-                    날짜2[i+j] = 날짜2[i];
-                    날짜2[i] = temp2;
+                temp2 = 날짜2[i+j];
+                날짜2[i+j] = 날짜2[i];
+                날짜2[i] = temp2;
 
-                    temp3 = 항목[i+j];
-                    항목[i+j] = 항목[i];
-                    항목[i] = temp3;
+                temp3 = 항목[i+j];
+                항목[i+j] = 항목[i];
+                항목[i] = temp3;
 
-                    temp4 = 금액[i+j];
-                    금액[i+j] = 금액[i];
-                    금액[i] = temp4;
+                temp4 = 금액[i+j];
+                금액[i+j] = 금액[i];
+                금액[i] = temp4;
 
-                    temp5 = 총금액[i+j];
-                    총금액[i+j] = 총금액[i];
-                    총금액[i] = temp5;
-                }
+                temp5 = 총금액[i+j];
+                총금액[i+j] = 총금액[i];
+                총금액[i] = temp5;
             }
         }
     }
-
-    // let temp = "";
-    // if(value1 > value2){
-    //     temp = value2;
-    //     value2 = value1;
-    //     value1 = temp;
-    // }
-
-    // if(value1 > value3){
-    //     temp = value3;
-    //     value3 = value1;
-    //     value1 = temp;
-    // }
-
-    // if(value2 > value3){
-    //     temp = value3;
-    //     value3 = value2;
-    //     value2 = temp;
-    // }
 
     // 3. 출력
     document.querySelector("#date").value = '';
