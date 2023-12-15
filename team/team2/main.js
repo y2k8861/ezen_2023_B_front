@@ -177,3 +177,22 @@ function 구매(i){
     
 
 }
+
+
+function 구매(i){
+    
+    const date =prompt('날짜를 입력해주세요 ex)yyyy-mm-dd')
+    if(date[4] == "-" && date[7] =="-" && date.length == 10){
+        수량[i] -= 1;
+        구매날짜.push(date); console.log(구매날짜);
+        구매제품명.push(제품명[i]); console.log(구매제품명);
+        구매가격.push(가격[i]); console.log(구매가격);
+    }
+    else{
+        alert("날짜형식이 다릅니다");
+    }
+    //출력
+    console.log(`구매 ${수량[i]}`);
+    정렬();
+    구매내역출력();
+}
