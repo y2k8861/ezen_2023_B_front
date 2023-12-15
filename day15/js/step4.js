@@ -145,3 +145,8 @@ function 천단위(바꿀금액){
     }
     return 금액처리완;
 }
+
+function test(){
+    const 이미지 = document.querySelector("#img_name").value;
+    console.log(이미지);
+}
