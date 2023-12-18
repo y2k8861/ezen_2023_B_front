@@ -13,7 +13,10 @@ function 글쓰기(){
         내용 : content
     }
 
+    board.조회수 = 0    // 객체 내 없는 key 호출할떄.. key 생성. // 첫 등록했으니까 조회수는 0부터 시작..
+
     boardArray.push(board);
+    console.log(boardArray);
 
     모든글출력();
     document.querySelector('#writer').value = '';
@@ -34,6 +37,7 @@ function 모든글출력(){
                     <td>${i+1}</td>
                     <td>${boardArray[i].제목}</td>
                     <td>${boardArray[i].작성자}</td>
+                    <td>${boardArray[i].조회수}</td>
                 </tr>
                 `
     }
@@ -43,10 +47,10 @@ function 모든글출력(){
 }
 
 function 개별글출력(index){
+    boardArray[index].조회수 += 1;
     const boardBox = document.querySelector("#boardBox");
-
     let html  = `
-                <div>작성자 : ${boardArray[index].작성자}</div>
+                <div>작성자 : ${boardArray[index].작성자} 조회수 : ${boardArray[index].조회수}</div>
                 <div>제목 : ${boardArray[index].제목}</div>
                 <div>내용 : ${boardArray[index].내용.replaceAll('\n','<br />')}</div>
                 <input type="button" value="수정" onclick="글수정(${index})" />
@@ -54,7 +58,7 @@ function 개별글출력(index){
                 `;
 
     boardBox.innerHTML = html;
-
+    모든글출력()
     return;
 }
 
