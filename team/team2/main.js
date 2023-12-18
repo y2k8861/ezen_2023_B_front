@@ -1,3 +1,4 @@
+const 제품이미지 = [];
 const 제품명 = [];
 const 가격 = [];
 const 수량 = [];
@@ -5,7 +6,6 @@ let 매출 = 0;
 const 구매날짜=[];
 const 구매제품명=[];
 const 구매가격=[];
-const 제품이미지 = [];
 function 등록(){
     //1.입력
     const itemName = document.querySelector('#itemName').value;     
