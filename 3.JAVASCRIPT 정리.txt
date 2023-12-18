@@ -319,6 +319,24 @@ JAVA와 JAVAScript 다르다
     str.length-1 : 마지막 인텍스
         length : 1 ~ , index : 0 ~
 
+- 객체 
+    - 실제로 존자하는 사물 의미. [실제 존재하는 것]
+    - key 와 value을 한쌍으로 속성property
+        property    key : value
+    - key/키 : 식별용 이므로 '주로 문자욜'
+    - value/값 : 실제데이터 이므로 모든 자료형
+    - 형태
+        {key:value,key:value,key:value}
+    - 객체 호출
+        - 변수/상수명
+    - 객체 내 속성 값 호출
+        변수/상수명.속성명
+        변수/상수명['속성명']
+    - 객체 내 속성 추가
+        변수/상수명/새로운 속성명 = 값
+    - 객체 내 속성 삭제
+        delete 변수/상수명.삭제할속성명
+
 - DOM(문서Document 객체object 모델Model) 객체
     1.document          : HTML -(.js는 항상 HTML안에 존재한다.)
         - 제공하는 함수

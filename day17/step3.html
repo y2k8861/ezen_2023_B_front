@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='js/step3.js'></script>
+    <style>
+        * {box-sizing: border-box;}
+        body > div {display: flex;}
+        body > div > div {
+            border: 1px solid black; 
+            padding: 10px; width: 33.4%;
+        }
+        body > div > div * {max-width: 100%;}
+        body > div > div table {width: 100%; table-layout: fixed; border-collapse: collapse;}
+        body > div > div table tr {border-bottom: 1px solid #ddd; padding: 10px 0;}
+        body > div > div table tbody tr {transition: all 0.3s; cursor: pointer;}
+        body > div > div table tbody tr:hover {background-color: #ddd;}
+        body > div > div table tbody tr td,th {padding: 5px 0;}
+    </style>
+</head>
+<body>
+    <div>
+        <div id="write">
+            <h3>글쓰기</h3>
+            <form action="">
+                작성자 : <input type="text" name="" id="writer" /> <br/>
+                비밀번호 : <input type="password" name="" id="password" /> <br/>
+                제목 :  <input type="text" name="" id="title" /> <br/>
+                내용 :  <textarea name="" id="content" cols="30" rows="10"></textarea> <br/>
+                <input type="button" value="등록" onclick="글쓰기()" />
+            </form>
+        </div>
+
+        <div id="list">
+            <h3>글목록</h3>
+
+            <table>
+                <colgroup>
+                    <col width="20%">
+                    <col width="50%">
+                    <col width="30%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- JS innerHTML -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="view">
+            <h3>글보기</h3>
+
+            <div id="boardBox">
+                <!-- JS innerHTML -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -53,7 +53,6 @@ function 모든글출력(){  // 매개변수 : X, 리턴값 : X
     }
 
     tableBody.innerHTML = html;
-
     return;
 }
 
