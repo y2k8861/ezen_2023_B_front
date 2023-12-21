@@ -339,11 +339,11 @@ function productIn(){
     return prNumber;
 }
 
-function detailsView(i){
+function detailsView(trNumber){
     const noTr = document.querySelector('.detailsTr')
     noTr.style.display = "none";
 
-    const detailsTr = document.querySelector('.detailsTr'+i);
+    const detailsTr = document.querySelector('.detailsTr'+trNumber);
     detailsTr.style.display = "table-row";
 }
 

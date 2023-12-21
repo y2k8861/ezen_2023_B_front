@@ -1,0 +1,7 @@
+* {box-sizing: border-box;}
+body {max-width: 800px; margin: 0 auto;}
+div table tr {border-bottom: 1px solid #ddd; padding: 10px 0;}
+div table {width: 100%; table-layout: fixed; border-collapse: collapse;}
+div table tbody tr {transition: all 0.3s; cursor: pointer; text-align: center;}
+div table tbody tr:hover {background-color: #ddd;}
+div table tbody tr td,th {padding: 5px 0;}

@@ -99,3 +99,14 @@ const h2 = '안녕하세요';
 console.log(h2.indexOf('안녕'))
 console.log(h2.indexOf('하세'))
 console.log(h2.indexOf('자바'))
+// vs
+// p.266
+//console.log(h2.contain('안녕')) // contain is not a finction [contain() 메소드 없다]
+String.prototype.contain = function (data){
+    return this.indexOf(data) >= 0 // 0이상이면 true, 아니면 false
+                                   // 인덱스가 존재하면 true 존재하지않으면 false
+}
+
+console.log(h2.contain('안녕'))
+
+console.log(localStorage.getItem('이름'))
