@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SDSamliphopangche_Basic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+ul,li,ol {list-style: none;}
+table {table-layout: fixed; border-collapse: collapse;}
+a {color: #333; text-decoration: none;}
+
+/* 전체구역 */
+#wrap {width: 700px; /* margin: 0 auto; */}
+
+/* header */
+#header > img {width: 100%;}
+#header > ul {
+    display: flex; 
+    justify-content: space-around;
+    margin: 10px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+#header > ul li {cursor: pointer;}
+
+/* 선택된 카테고리 */
+#header > ul .selectMenu {
+    border-bottom: 2px solid #dd5555;
+    color: #dd5555;
+    padding-bottom: 5px;
+    font-weight: 900;
+}
+
+/* 제품 목록 구역 */
+#productBox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    height: 500px;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+/* 제품 1개 구역 */
+#productBox .product {width: 32%; margin-right: 2%; cursor: pointer; transition: all 0.3s; padding-bottom: 15px;}
+#productBox .product:hover {box-shadow: 1px 1px 5px rgba(0,0,0,0.5);}
+#productBox .product:nth-last-child(3n) {margin-right: 0;}
+/* 제품 이미지 */
+#productBox .product > img {width: 100%;}
+
+/* 제품 이름/가격 */
+#productBox .product > .productInfo {text-align: center; font-family: 'SDSamliphopangche_Basic';}
+#productBox .product > .productInfo > .pname {font-size: 18px; color: #000; font-weight: 500;}
+#productBox .product > .productInfo > .pprice {color: #dd5555; margin-top: 5px;}
+
+/* 카트 구역 */
+#cartBox {background-color: #ddd; }
+
+/* 카트정보 상단부분 */
+#cartTop {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px 50px;
+}
+
+#cartTop > div:nth-child(1) span {
+    background-color: #dd5555;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 3px; width: 30px;
+    text-align: center; color: #fff;
+}
+
+#cartTop > div:nth-child(2) span {
+    font-weight: 600;
+    color: #dd5555;
+}
+
+/* 카트정보 하단 부분 */
+#cartBottom {
+    display: flex;
+    /* flex-flow: row wrap; */
+    height: 150px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px 20px;
+}
+
+#cartBottom .cItem {
+    background-color: #fff;
+    position: relative;
+    min-width: 170px;
+    height: 120px;
+    padding: 10px;
+    margin-right: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+#cartBottom .cItem:last-child {margin-right: 0;}
+
+#cartBottom .cItem div {padding-right: 15px;}
+#cartBottom .cItem div:nth-child(1) {
+    font-weight: 600;
+}
+#cartBottom .cItem div:nth-child(2) {
+    color: #dd5555;
+    font-weight: 500;
+}
+
+#cartBottom .cItem span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* 카트 버튼 구역 */
+#cartBtnWrap {display: flex;}
+#cartBtnWrap > input {
+    width: 100%; height: 50px;
+    font-size: 20px; border: none; outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#cartBtnWrap > input:nth-child(1) {background-color: #000;}
+#cartBtnWrap > input:nth-child(2) {background-color: #dd5555;}
+
+body {display: flex; flex-flow: row wrap; justify-content: center;}
+
+#adminPage {width: 500px; margin-left: 50px;}
+
+#table1 {width: 100%; text-align: center;}
+#table1 tr {border-bottom: 1px solid #ddd;}
+#table1 tr td, #table1 tr th {padding: 10px 0;}
+#table1 table {width: 100%;}
+#table1 .btnTd {cursor: pointer;}
+#table1 .detailsTr {display: none;}
+#table1 .detailsTr td {padding: 0;}

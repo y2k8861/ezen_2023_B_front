@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/step1.css'>
+    <script src='js/step1.js'></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <img src="img/mainVisual.png" alt="" />
+
+            <ul>
+            </ul>
+        </div>
+
+        <div id="main">
+            <div id="productBox">
+                
+            </div>
+
+            <div id="cartBox">
+                <div id="cartContent">
+                    <div id="cartTop">
+                        <div>카트 <span class="span1">0</span></div>
+                        <div>총 주문금액 <span class="span2">0</span></div>
+                    </div>
+
+                    <div id="cartBottom">
+                        
+                    </div>
+                </div>
+
+                <div id="cartBtnWrap">
+                    <input type="button" value="취소하기" onclick="orderCansle()">
+                    <input type="button" value="주문하기" onclick="orderComplete()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="adminPage">
+        <h3>관리자등록</h3><br/>
+        <div>
+            <h3>카테고리등록</h3>
+            카테고리 : <input type="text" id="caInInput">
+            <input type="button" value="등록" onclick="caIn()">
+
+        </div>
+        <br/></br/>
+        <div>
+            <h3>제품등록</h3>
+            <select name="" id="productCategorySelect" style="width: 150px;">
+            </select><br/>
+            제품이미지 : <input type="file" id="productImg"> <br />
+            제품명 : <input type="text" name="" id="productName"> <br />
+            가격  : <input type="text" id="productPrice">
+            <input type="button" value="등록" onclick="productIn()">
+        </div>
+        <br/><br/>
+        <div>
+            <h3>결제</h3>
+            <!-- 결제 버튼을 클릭하면 장바구니 제품을 결제내역으로 이동. -->
+            <!-- 주문번호, 주문날짜, 주문상태 -->
+            <!-- 관리자 내역 table에 주문현황/결제내역 출력 -->
+            <table id="table1">
+                <colgroup>
+                    <col width="20%">
+                    <col width="30%">
+                    <col width="30%">
+                    <col width="20%">
+                </colgroup>
+
+                <thead>
+                    <th>주문번호</th>
+                    <th>주문날짜</th>
+                    <th>주문상태</th>
+                    <th>비고</th>
+                </thead>
+
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
