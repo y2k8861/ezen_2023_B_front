@@ -19,9 +19,10 @@ function 개별글출력(index){
                         `;
 
             boardBox.innerHTML = html;
-            return;
         }
     }
+
+    localStorage.setItem('boardArray',JSON.stringify(boardArray))
     
 }
 
@@ -68,8 +69,10 @@ function 글삭제(index){
     let boardArray = JSON.parse(localStorage.getItem('boardArray'));
     for(let j = 0; j<boardArray.length; j++){
         if(checkPw == boardArray[j].비밀번호){
-            boardArray.splice(j , 1);
-            alert('삭제 성공');
+            if(index == boardArray[j].번호){
+                boardArray.splice(j , 1);
+                alert('삭제 성공');
+            }
         } else {
             alert('패스워드가 다릅니다. 삭제불가.'); return;
         }

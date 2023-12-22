@@ -1,6 +1,9 @@
-let boardNumber = 0
 let viewpage = JSON.parse(localStorage.getItem('viewpage'));
 if(viewpage == null){
+    let boardNumber = JSON.parse(localStorage.getItem('boardNumber'))
+    if(boardNumber == null){
+        boardNumber = 0
+    }
     function 글쓰기(){
         const writer = document.querySelector('#writer').value;
         const password = document.querySelector('#password').value;
@@ -25,6 +28,7 @@ if(viewpage == null){
     
         boardArray.push(board);
         localStorage.setItem('boardArray',JSON.stringify(boardArray))
+        localStorage.setItem('boardNumber',JSON.stringify(boardNumber))
     
         document.querySelector('#writer').value = '';
         document.querySelector('#password').value = '';
