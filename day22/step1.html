@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='js/step1.js'></script>
+    <!-- p.308 -->
+    <!-- <script>
+        document.body.innerHTML += `안녕`
+    </script> -->
+
+    <!-- p.309 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.body.innerHTML  += '안녕3'
+        });
+
+        document.onload = function(){
+            alert('ss')
+            document.body.innerHTML  += '안녕4'
+        }
+
+        document.addEventListener( 'load',function(){
+            document.body.innerHTML  += '안녕5'
+        })
+
+        window.onload = function(){
+            document.body.innerHTML  += '안녕6'
+        }
+    </script>
+</head>
+<body>
+    <script>
+        document.body.innerHTML += `안녕2`
+    </script>
+</body>
+</html>
