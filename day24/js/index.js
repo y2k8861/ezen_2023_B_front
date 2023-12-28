@@ -141,12 +141,49 @@ function 댓글출력(fno){
     return html
 }
 
-function 수정(fno){
-    alert(fno + '수정')
+// [3] 피드/게시물의 해당하는 댓글 모두 출력하는 함수 정의
+function 삭제(fno){
+    // 2. 패스워드 일치 여부 확인
+    if(패스워드확인(fno)){return}
+    
+        // 1. 피드목록에서 fno 객체 찾기
+    let feedList = JSON.parse(localStorage.getItem('feedList'));
+    for(let i = 0; i<feedList.length; i++){
+        const feed = feedList[i];
+        // 2. 찾은 객체의 fpwd와 입력받은 패스워드 일치 여부
+        if(fno == feed.fno){
+            feedList.splice(i,1);
+            alert('삭제되었습니다.');
+            localStorage.setItem('feedList',JSON.stringify(feedList));
+            모든피드호출();
+            return;
+        }
+    }
 }
 
-function 삭제(fno){
-    console.log(fno + '삭제');
+// [4] 피드/게시물의 해당하는 수정페이지로 넘어가는 함수 정의
+function 수정(fno){
+    console.log(fno + '수정')
+    // 1. 확인패스워드 입력
+    if(패스워드확인(fno)){return}
+
+    // 2. 패스워드 일치 여부 확인
+        // 1. 피드목록에서 fno 객체 찾기
+    let feedList = JSON.parse(localStorage.getItem('feedList'));
+    for(let i = 0; i<feedList.length; i++){
+        const feed = feedList[i];
+        // 2. 찾은 객체의 fpwd와 입력받은 패스워드 일치 여부
+        if(fno == feed.fno){
+            localStorage.setItem('update',JSON.stringify(fno));
+            location.href = 'update.html'
+            return;
+        }
+    }
+    // if(패스워드확인(fno)){}
+}
+
+// [5] 패스워드 검사 합수 (1.삭제/수정 함수)
+function 패스워드확인(fno){
     // 1. 확인패스워드 입력
     const pwdConfirm = prompt('패스워드를 입력해주세요.');
 
@@ -157,15 +194,11 @@ function 삭제(fno){
         const feed = feedList[i];
         // 2. 찾은 객체의 fpwd와 입력받은 패스워드 일치 여부
         if(pwdConfirm == feed.fpwd && fno == feed.fno){
-            feedList.splice(i,1);
-            alert('삭제되었습니다.');
-            localStorage.setItem('feedList',JSON.stringify(feedList));
-            모든피드호출();
-            return;
+            return false; // 패스워드가 일치하면 false
         }
     }
-
-    alert('패스워드를 확인해주세요.'); return;
+    alert('패스워드를 확인해주세요.');
+    return true; // 패스워드가 일치하지않으면 true
 }
 
 function 댓글삭제(cno){

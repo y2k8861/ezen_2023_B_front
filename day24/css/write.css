@@ -30,6 +30,7 @@ button {
     border-radius: 20px;
     transition: all 0.3s;
     cursor: pointer;
+    outline: none;
 }
 
 button:hover {
