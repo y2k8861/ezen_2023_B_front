@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/common.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/write.css'>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src='js/common.js'></script>
+    <script src='js/write.js'></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="main">
+            <br/>
+            <input type="password" placeholder="비밀번호입력(수정/삭제시)" /><br/>
+            <textarea name="" id="" cols="30" rows="10" placeholder="게시물내용입력"></textarea><br/>
+            <input onchange="이미지등록(event)" type="file" accept="image/*" name="" id="" /><br/>
+            <img src="" alt="" id="fileImg"><br/>
+            <button type="button" onclick="피드등록()">피드게시</button>
+        </div>
+    </div>
+</body>
+</html>
